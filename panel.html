@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>SecureAdmin - Panel</title>
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <main class="panel-container">
+
+        <header class="panel-header">
+
+            <div>
+                <h1>Panel de usuarios</h1>
+
+                <p class="user-info" id="current-user">
+                    Cargando...
+                </p>
+            </div>
+
+            <button id="supervisor-button" class="login-button" style="display: none;">
+                    Panel del supervisor
+            </button>
+
+            <button
+                id="logout-button"
+                class="logout-button"
+            >
+                Cerrar sesión
+            </button>
+
+        </header>
+
+
+        <section class="users-card">
+
+            <div id="users-list">
+                <p style="padding: 20px;">
+                    Cargando usuarios...
+                </p>
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <script type="module" src="app.js"></script>
+
+</body>
+</html>

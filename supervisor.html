@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>SecureAdmin - Supervisor</title>
+
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+
+<body>
+
+    <main class="panel-container">
+
+        <header class="panel-header">
+
+            <div>
+                <h1>Panel del Supervisor</h1>
+
+                <p class="user-info">
+                    Configuración de la aplicación
+                </p>
+            </div>
+
+            <button
+                id="back-button"
+                class="back-button">
+                ← Volver al panel
+            </button>
+
+            <button
+                id="logout-button"
+                class="logout-button">
+                Cerrar sesión
+            </button>
+
+        </header>
+
+
+        <section class="users-card">
+
+            <div style="padding: 30px; text-align: center;">
+
+                <h2>
+                    Configuración predeterminada
+                </h2>
+
+                <p style="margin: 15px 0;">
+                    Cambia aleatoriamente el color
+                    de fondo de los usuarios que
+                    aceptaron la configuración.
+                </p>
+
+
+                <button
+                    id="random-color-button"
+                    class="login-button"
+                    style="max-width: 300px;">
+                    🎨 Cambiar color aleatorio
+                </button>
+
+
+                <p
+                    id="color-message"
+                    style="margin-top: 20px;">
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <section
+            class="users-card"
+            style="margin-top: 25px;">
+
+            <div style="padding: 20px;">
+
+                <h2>
+                    Usuarios con configuración
+                    predeterminada
+                </h2>
+
+                <p
+                    id="users-count"
+                    style="margin-top: 10px;">
+                    Cargando...
+                </p>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <script type="module" src="app.js"></script>
+
+</body>
+
+</html>
